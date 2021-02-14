@@ -3,9 +3,13 @@ package main
 import (
 	"github.com/goat-systems/tzpay/v3/internal/cmd"
 	"github.com/spf13/cobra"
+
+	"github.com/joho/godotenv"
 )
 
 func main() {
+
+	godotenv.Load(".env")
 
 	rootCommand := &cobra.Command{
 		Use:   "tzpay",

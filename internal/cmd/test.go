@@ -14,7 +14,7 @@ func TestCommand() *cobra.Command {
 		Long:    "test just shows random text",
 		Example: `tzpay test`,
 		Run: func(cmd *cobra.Command, args []string) {
-			fmt.Print("Testing cron job")
+			fmt.Print("Hello world")
 		},
 	}
 
